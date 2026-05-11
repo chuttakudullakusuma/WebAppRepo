@@ -21,10 +21,10 @@ jobs:
         run: dotnet restore WebApplication1/WebApplication1.csproj
 
       - name: Build project
-        run: dotnet build WebApplication1/WebApplication1.csproj--configuration Release --no-restore
+        run: dotnet build WebApplication1/WebApplication1.csproj --configuration Release --no-restore
 
       - name: Publish project
-        run: dotnet publish WebApplication1/WebApplication1.csproj-c Release -o ./publish
+        run: dotnet publish WebApplication1/WebApplication1.csproj -c Release -o ./publish
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
