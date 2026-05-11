@@ -1,9 +1,8 @@
 name: .Net CI Pipeline
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [ "master" ]
+      
 jobs:
   build:
     runs-on: ubuntu-latest
