@@ -20,6 +20,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapGet("/",()=> "Hello from github push test");
+app.MapGet("/",()=> "Hello,  this is a program");
 
 app.Run();
